@@ -34,4 +34,4 @@ export class Wallet extends Component {
 	}
 }
 
-export default connect(state => {return {balance: state}} ,{deposit, withdraw})(Wallet) // for connect function, first argument specify which part of redux store we want to use on this component, 2nd argument which function to send data to redux store
+export default connect(state => {return {balance: state.balance}} ,{deposit, withdraw})(Wallet) // for connect function, first argument specify which part of redux store we want to use on this component, 2nd argument which function to send data to redux store
